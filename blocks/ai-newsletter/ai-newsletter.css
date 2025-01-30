@@ -1,0 +1,45 @@
+
+.ai-newsletter-wrapper {
+  border-bottom: 2px solid #8B0000; /* Bottom border to match the original image */
+  padding: 10px 0; /* Adjust padding as needed */
+}
+
+.ai-newsletter > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row; /* Ensure elements are side by side */
+}
+
+.ai-newsletter h2 {
+  margin: 0;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: black; /* Change text color to black */
+}
+
+.ai-newsletter h2 a {
+  color: black; /* Ensure the link inside h2 is also black */
+}
+
+.ai-newsletter h2::before {
+  content: "➔"; /* Adding the arrow icon before the text */
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.ai-newsletter .button-container {
+  margin: 0;
+}
+
+.ai-newsletter .button-container a.button {
+  font-size: smaller;
+  color: black; /* Change text color to black */
+  background: none; /* Remove button background */
+  border: none; /* Remove button border */
+  padding: 0; /* Remove button padding */
+  text-decoration: none; /* Remove underline */
+  display: inline; /* Ensure it doesn't behave like a button */
+  max-width: none; /* Ensure it doesn't restrict width */
+  cursor: default; /* Change cursor to default to indicate it's not a button */
+}
