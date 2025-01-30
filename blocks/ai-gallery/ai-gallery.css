@@ -1,0 +1,67 @@
+
+.ai-gallery-wrapper > .ai-gallery {
+  margin: 20px;
+}
+
+.ai-gallery > div > div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.ai-gallery h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.ai-gallery .button-container {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.ai-gallery > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-gallery > div > div:not(:first-child) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ai-gallery > div > div:not(:first-child) > p {
+  flex: 1 1 calc(33.333% - 20px); /* Adjusts the width to one-third of the container with a gap */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.ai-gallery > div > div:not(:first-child) > p img {
+  width: 100%;
+  height: auto;
+}
+
+.ai-gallery > div > div:not(:first-child) > p .button-container {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.ai-gallery > div > div:not(:first-child) > p a:last-child {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+}
