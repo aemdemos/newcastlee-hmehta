@@ -1,7 +1,9 @@
 # newcastlee-hmehta
-This is a project created by the ESaaS Demo Tool. It is based on [https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate).
+
+This is a project created by AEMY.
 
 ## Environments
+
 - Preview: https://main--newcastlee-hmehta--aemdemos.aem.page/
 - Live: https://main--newcastlee-hmehta--aemdemos.aem.live/
 
