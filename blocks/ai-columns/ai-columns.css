@@ -1,0 +1,33 @@
+.ai-columns > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-columns img {
+  width: 100%;
+}
+
+.ai-columns > div > div {
+  order: 1;
+}
+
+.ai-columns > div > .ai-columns-img-col {
+  order: 0;
+}
+
+.ai-columns > div > .ai-columns-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .ai-columns > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .ai-columns > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
