@@ -1,0 +1,49 @@
+
+.ai-latest-news-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between rows */
+}
+
+.ai-latest-news-wrapper > .ai-latest-news {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ai-latest-news-wrapper > .ai-latest-news > div {
+  display: flex;
+  flex-direction: row; /* Ensure side-by-side layout */
+  flex-wrap: wrap;
+  gap: 20px; /* Space between columns */
+}
+
+.ai-latest-news-wrapper > .ai-latest-news > div > div {
+  flex: 1 1 calc(33.333% - 20px); /* Three equal columns with space between */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between elements inside each column */
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #fff; /* Add background color for better separation */
+}
+
+.ai-latest-news-wrapper > .ai-latest-news > div > h2 {
+  flex-basis: 100%;
+  margin-bottom: 20px; /* Add margin below the header */
+}
+
+.ai-latest-news-wrapper > .ai-latest-news > div > p.button-container {
+  flex-basis: 100%;
+  text-align: left;
+  margin-bottom: 20px; /* Add margin below the button */
+}
+
+.ai-latest-news-wrapper > .ai-latest-news > div > div > picture,
+.ai-latest-news-wrapper > .ai-latest-news > div > div > p {
+  margin: 0; /* Remove default margins */
+}
+
+.ai-latest-news-wrapper > .ai-latest-news > div > div > h3 {
+  font-size: 1.2em;
+}
