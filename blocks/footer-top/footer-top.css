@@ -1,0 +1,63 @@
+
+.footer-top-wrapper {
+  background-color: #4b0000; /* Dark red background color */
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+}
+
+.footer-top-wrapper .footer-top.block > div {
+  display: flex;
+  flex-direction: row; /* Ensures side-by-side layout */
+  justify-content: space-between; /* Ensures space between the text and image sections */
+  align-items: flex-start; /* Align items to the top */
+  color: white; /* Text color */
+  width: 100%;
+  max-width: 1200px; /* Optional: limit the maximum width */
+}
+
+.footer-top-wrapper .footer-top.block > div > div:first-child {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-top-wrapper .footer-top.block h2,
+.footer-top-wrapper .footer-top.block h3 {
+  color: white;
+}
+
+.footer-top-wrapper .footer-top.block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-top-wrapper .footer-top.block ul li {
+  margin-bottom: 10px;
+}
+
+.footer-top-wrapper .footer-top.block ul li a {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-top-wrapper .footer-top.block p a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+.footer-top-wrapper .footer-top.block p {
+  display: flex;
+  justify-content: flex-start; /* Align the links to the start */
+  gap: 10px; /* Add space between the links */
+  width: 100%; /* Ensure links are centered within the available width */
+}
+
+.footer-top-wrapper .footer-top.block picture {
+  max-width: 262px; /* Ensures the image has a consistent size */
+  height: auto;
+  align-self: flex-start; /* Align the image to the top */
+  margin-left: 20px; /* Add margin to the left of the image */
+}
