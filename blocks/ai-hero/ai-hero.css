@@ -1,0 +1,58 @@
+
+/* Set the wrapper to position relative to handle absolute positioning of child elements */
+.ai-hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 355px; /* Height of the image */
+  max-width: unset;
+  padding: 0;
+}
+
+/* Use the ::before pseudo-element to set the image as the background */
+.ai-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./media_188e1b3b00cac1b2ab9068279535a1c5030dffdf5.jpeg?width=1280&amp;height=355');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Ensure the background is behind the text */
+}
+
+/* Style the inner div to display text content */
+.ai-hero > div {
+  display: flex;
+  flex-direction: row; /* Ensure elements are side by side */
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.ai-hero > div > div {
+  background-color: rgba(128, 0, 0, 0.8); /* Dark red background with some transparency */
+  padding: 20px;
+  max-width: 400px; /* Optional: Limit the width of the text block */
+  color: white; /* Ensure text is readable on the dark background */
+  display: flex;
+  flex-direction: column; /* Ensure elements are stacked vertically */
+}
+
+.ai-hero h2 {
+  margin: 0 0 10px 0;
+}
+
+.ai-hero p {
+  margin: 0 0 10px 0;
+}
+
+/* Ensure the image inside the picture element does not display */
+.ai-hero picture {
+  display: none;
+}
