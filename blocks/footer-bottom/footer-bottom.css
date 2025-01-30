@@ -1,33 +1,57 @@
-.footer-bottom > div {
+
+.footer-bottom-wrapper .footer-bottom {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e0e0e0; /* Light gray background */
+  padding: 20px; /* Adjust padding as needed */
 }
 
-.footer-bottom img {
-  width: 100%;
+.footer-bottom-wrapper .footer-bottom > div {
+  display: flex;
+  flex-direction: row; /* Ensure side-by-side layout */
+  align-items: center;
+  gap: 20px; /* Ensure spacing between columns */
 }
 
-.footer-bottom > div > div {
-  order: 1;
+.footer-bottom-wrapper .footer-bottom .footer-bottom-img-col {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Ensure spacing between image and text */
 }
 
-.footer-bottom > div > .footer-bottom-img-col {
-  order: 0;
+.footer-bottom-wrapper .footer-bottom a {
+  text-decoration: none;
+  color: black; /* Adjust the color to match the original */
 }
 
-.footer-bottom > div > .footer-bottom-img-col img {
-  display: block;
+.footer-bottom-wrapper .footer-bottom .support-links-wrapper {
+  display: flex;
+  flex-direction: row; /* Ensure side-by-side layout for support links */
+  flex-wrap: wrap; /* Allow wrapping to create multiple columns */
+  gap: 20px; /* Ensure spacing between columns */
 }
 
-@media (width >= 900px) {
-  .footer-bottom > div {
-    align-items: center;
-    flex-direction: unset;
-    gap: 24px;
-  }
+.footer-bottom-wrapper .footer-bottom .support-links-wrapper > div {
+  flex: 1 1 20%; /* Ensure five columns */
+}
 
-  .footer-bottom > div > div {
-    flex: 1;
-    order: unset;
-  }
+.footer-bottom-wrapper .footer-bottom .support-links-wrapper ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-bottom-wrapper .footer-bottom .support-links-wrapper ul li {
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.footer-bottom-wrapper .footer-bottom h2 {
+  margin: 0 0 10px 0; /* Adjust margin as needed */
+}
+
+.footer-bottom-wrapper .footer-bottom .footer-bottom-img-col img {
+  width: auto; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+  max-width: 150px; /* Ensure appropriate size */
+  max-height: 60px; /* Ensure appropriate size */
 }
