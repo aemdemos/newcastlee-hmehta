@@ -1,33 +1,53 @@
-.ai-columns > div {
+
+.ai-columns-wrapper > .ai-columns > div {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between; /* Evenly space the items */
+  align-items: flex-start; /* Align items to the start vertically */
+  flex-direction: row; /* Ensure items are aligned side by side */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 24px; /* Add spacing between items */
 }
 
-.ai-columns img {
-  width: 100%;
+.ai-columns-wrapper > .ai-columns > div > div {
+  flex: 1; /* Allow all inner divs to take equal space */
+  margin: 0 10px; /* Add horizontal margin between the items */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  display: flex;
+  flex-direction: column; /* Ensure items are stacked vertically */
+  align-items: flex-start; /* Align items to the start vertically */
 }
 
-.ai-columns > div > div {
-  order: 1;
+.ai-columns-wrapper > .ai-columns > div > div > h3,
+.ai-columns-wrapper > .ai-columns > div > div > ul {
+  margin: 0;
+  width: 100%; /* Ensure full width for better alignment */
 }
 
-.ai-columns > div > .ai-columns-img-col {
-  order: 0;
+.ai-columns-wrapper > .ai-columns > div > div > h3 {
+  margin-bottom: 10px;
+  white-space: nowrap; /* Prevent headings from breaking into multiple lines */
+  overflow: hidden; /* Hide any overflow text */
+  text-overflow: ellipsis; /* Use ellipsis for overflow text */
 }
 
-.ai-columns > div > .ai-columns-img-col img {
-  display: block;
+.ai-columns-wrapper > .ai-columns > div > div > ul {
+  list-style: disc inside; /* Align list items properly */
+  padding-left: 0; /* Remove default padding */
 }
 
-@media (width >= 900px) {
-  .ai-columns > div {
-    align-items: center;
-    flex-direction: unset;
-    gap: 24px;
-  }
+.ai-columns-wrapper > .ai-columns > div > div .button-container {
+  display: none; /* Hide the button container */
+}
 
-  .ai-columns > div > div {
-    flex: 1;
-    order: unset;
-  }
+.ai-columns-wrapper > .ai-columns .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.ai-columns-wrapper > .ai-columns .button:hover {
+  background-color: #005bb5;
 }
